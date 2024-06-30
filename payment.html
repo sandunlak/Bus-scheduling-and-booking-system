@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>payment page</title>
+  <link rel="stylesheet" href="styles1/payment1.css">
+</head>
+
+<body>
+
+  <h1>Payments</h1>
+	<!--home button-->
+  <button type="button" class="Homebtn"><a href="Homepage.html">Home</a></button>
+  <hr>
+
+    <form action="connect.php"  method="post">
+		
+        <div class="getway">
+
+		    <h2>Confirm Your Payment</h2>
+			<div class="card">
+				<img src="images1/Visa.jpg" alt="hello" height="50px" width="50px" class="visa">
+				<img src="images1/master.png" alt="hello" height="50px" width="50px" class="visa">
+				<img src="images1/applep.png" alt="hello" height="50px" width="50px" class="visa">
+            </div>
+
+			<!--name , nic , email -->
+          	<div class="one">
+            	<lable for="name">Name:</lable><br>
+            	<input type="text" name="name" placeholder="Name" required><br><br>
+          	</div>
+
+          	<div class="two">
+            	<lable for="nic">NIC/Passport No:</lable><br>
+            	<input type="text" name="nic" id="nic"  maxlength="10" placeholder="742566349v" required><br><br>
+          	</div>
+
+          	<labe for="email">Email:</labe>
+          	<input type="email" name="email" id="email" placeholder="name@example.com" required>
+
+          
+
+			<div class="sectionOne">
+
+				<div class="payamount">
+					<p>Total Amount:</p>
+					<div class="input-text">
+					<input type="text" name="amount" placeholder=" RS." required >
+					</div>
+				</div>
+
+				<div class="card-number">
+					<p>Card Number:</p>
+					<div class="input-text">
+					<input type="text" name="cardNumber" maxlength="20" size="16" placeholder=" 0000-0000-0000-0000 " required >
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="sectionTwo">
+				<p>CVC:</p>
+				<div class="input-text">
+					<input type="password" name="CVC" maxlength="3" size="3" placeholder="  000"  required>
+				</div>
+			</div><br>
+			<div class="expiry-date">
+				<p>Card Expiry Date</p>
+				<div class="seletion">
+					<div class="date">
+						<select id="months">
+							<option>Jan</option>
+							<option>Feb</option>
+							<option>Mar</option>
+							<option>Apr</option>
+							<option>May</option>
+							<option>Jun</option>
+							<option>Jul</option>
+							<option>Aug</option>
+							<option>Sep</option>
+							<option>Oct</option>
+							<option>Nov</option>
+							<option>Dec</option>
+
+						</select>
+						<select id="years">
+							<option>2025</option>
+							<option>2024</option>
+							<option>2023</option>
+							<option>2022</option>
+							<option>2021</option>
+							<option>2020</option>
+						</select>
+					</div>
+
+				</div><br><br>
+
+				<div>
+					<center>
+						<!--button function onclick-->
+						<button type="submit" id="button" name="submit" onclick="btnFunction()"><a href="busSeat.html">Submit</a></button>
+					</center>
+				</div>
+        	</div>
+
+        </div>
+      	
+    </form>
+
+
+  	<script src="js1/payment2.js"></script>
+
+
+	
+<!--Page Footer -->		
+<!--<hr class=new5>-->						
+
+</div><!-- #content -->
+		
+		<div id="footer">
+			<footer>
+					<div class="row">
+							<ul class="list-group footer-section footer-section-left">
+								<li class="list1"><a href="AboutUs.html" style="color: black;  padding: 5px;background-color: rgb(0, 174, 255); border-radius:12px;">About Us</a></li>	
+								<li class="list1"><a href="hContactUs.html"style="color: black;  padding: 5px;background-color: rgb(0, 174, 255); border-radius:12px;">Contact Us</a></li>	
+								<li class="list1"><a href="Service.html" style="color: black;  padding: 5px;background-color: rgb(0, 174, 255); border-radius:12px;">Services</a></li>		
+								<li class="list1"><a href="Terms & Condition.html" style="color: black;  padding: 5px;background-color: rgb(0, 174, 255); border-radius:12px;">T &amp; C</a></li>	
+							</ul>	
+						</div>
+                            <center>						
+                           		<div class="col">
+								<ul class="list-group">
+								<li class="list-group-item"</li><h4 style="color:white;">Mode Of Payment</h4>	
+								<li class=" payment">
+									<img src="Images1/visa.jpg" alt="Visa"/>
+									<img src="Images1/master.png" alt="Master"/>
+									<img src="Images1/american.jpg" alt="American Express"/>
+									<img src="Images1/ezcash.jpg" alt="Ez Cash"/>
+									<img src="Images1/mcash.jpg" alt="M Cach"/>
+									<img src="Images1/genie.jpg" alt="Dialog Genie"/>
+								</li>	
+							</center>						
+						
+						
+
+							
+
+</body>
+
+</html>

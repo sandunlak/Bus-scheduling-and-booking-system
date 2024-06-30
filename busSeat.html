@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bus-seat</title>
+    <link rel="stylesheet" href="styles1/busSeat1.css">
+
+</head>
+<body>
+    	
+    <!--home button-->
+    <br><button type="button" class="Homebtn"><a href="Homepage.html">Home</a></button>
+
+    <br>
+    <br><hr>
+    
+    <div class="border">
+
+        <div>  
+            <h1>Select the seats</h1>
+
+            <div id="seatTicketPrice">
+                <p>Tickets Prices: 
+                    <select id="TicketPrice">
+                     <option>Colombo to Kandy Ticket price(Rs.2000)</option>
+                     <option>Colombo to Jaffna Ticket price(Rs.3500)</option>
+                     <option>Colombo to Galle Ticket price(Rs.2000)</option>
+                     <option>Colombo to Badulla Ticket price(Rs.4000)</option>
+                     <option>Colombo to Nuwaraeliya Ticket price(Rs.3000)</option>
+                     <option>Colombo to Kurunagala Ticket price(Rs.2500)</option>
+                    </select>
+                 
+                 </p>
+            </div>   
+           
+
+            <ul class="category">
+                <li>
+                    <div class="available"></div>
+                    <small>Available Seats</small>
+                </li>
+            
+            
+                <li>
+                    <div class="booked seats"></div>
+                    <small>Booked Seats</small>
+                </li>
+           
+            
+                <li>
+                    <div class="processing seats"></div>
+                    <small>Processing Seats</small>
+                </li>
+            </ul>
+        
+        
+        
+            <div class="bus">
+                <div class="line"></div>
+                <div class="bus-seat">
+                    <div class="seats-row">
+                        <div class="available">04</div>
+                        <div class="available">08</div>
+                        <div class="available">12</div>
+                        <div class="available">16</div>
+                        <div class="available">20</div>
+                        <div class="available">24</div>
+                        <div class="available">28</div>
+                        <div class="available">32</div>
+                        <div class="available">36</div>
+                        <div class="available">40</div>
+                        <div class="available">44</div>
+                        <div class="available">46</div>
+                        <div class="available">50</div>
+                    </div>
+                    <div class="seats-row">
+                        <div class="available">03</div>
+                        <div class="available">07</div>
+                        <div class="booked seats">11</div>
+                        <div class="available">15</div>
+                        <div class="available">19</div>
+                        <div class="available">23</div>
+                        <div class="available">27</div>
+                        <div class="available">31</div>
+                        <div class="available">35</div>
+                        <div class="available">39</div>
+                        <div class="available">43</div>
+                        <div class="available">45</div>
+                        <div class="available">49</div>
+                    </div><br>
+                    <div class="seats-row">
+                        <div class="available">02</div>
+                        <div class="available">06</div>
+                        <div class="available">10</div>
+                        <div class="available">14</div>
+                        <div class="available">18</div>
+                        <div class="available">22</div>
+                        <div class="booked seats">26</div>
+                        <div class="available">30</div>
+                        <div class="available">34</div>
+                        <div class="available">38</div>
+                        <div class="available">42</div>
+                        <div class="available" id="door"></div>
+                        <div class="available">48</div>
+                    </div>
+                    <div class="seats-row">
+                        <div class="available">01</div>
+                        <div class="booked seats">05</div>
+                        <div class="available">09</div>
+                        <div class="available">13</div>
+                        <div class="available">17</div>
+                        <div class="available">21</div>
+                        <div class="available">25</div>
+                        <div class="available">29</div>
+                        <div class="available">33</div>
+                        <div class="available">37</div>
+                        <div class="available">41</div>
+                        <div class="available" id="door"></div>
+                        <div class="available">47</div>
+                    </div>
+                </div>
+        
+            </div><br><br>
+        
+            <div class="tickets">
+                <input type="number" id="number1" placeholder="Ticket Price (RS.)" required>
+                <input type="number" id="number2" placeholder="Number of select seats" required>
+                <button class="totPriceButton"  onclick="TotalAmount()">Total Tiicket Price</button>
+
+                <p>Total Amount: <span id="totPrice"></span></p>
+            </div><br>
+            
+            <center>
+                
+                <button type="button" id="btn" ><a href="payment.html">Proceed</a></button>
+            </center>
+    </div>
+  
+    <script src="js1/busSeat2.js"></script>
+
+    	
+<!--Page Footer -->		
+					
+
+</div><!-- #content -->
+		
+		<div id="footer">
+			<footer>
+					<div class="row">
+							<ul class="list-group footer-section footer-section-left">
+								<li class="list1"><a href="AboutUs.html" style="color: black;  padding: 5px;background-color: rgb(0, 174, 255); border-radius:12px;">About Us</a></li>	
+								<li class="list1"><a href="ContactUs.html"style="color: black;  padding: 5px;background-color: rgb(0, 174, 255); border-radius:12px;">Contact Us</a></li>	
+								<li class="list1"><a href="Service.html" style="color: black;  padding: 5px;background-color: rgb(0, 174, 255); border-radius:12px;">Services</a></li>		
+								<li class="list1"><a href="Terms & Condition.html" style="color: black;  padding: 5px;background-color: rgb(0, 174, 255); border-radius:12px;">T &amp; C</a></li>	
+							</ul>	
+						</div>
+                            <center>						
+                           		<div class="col">
+								<ul class="list-group">
+								<li class="list-group-item"</li><h4 style="color:white;">Mode Of Payment</h4>	
+								<li class=" payment">
+									<img src="Images1/visa.jpg" alt="Visa"/>
+									<img src="Images1/master.png" alt="Master"/>
+									<img src="Images1/american.jpg" alt="American Express"/>
+									<img src="Images1/ezcash.jpg" alt="Ez Cash"/>
+									<img src="Images1/mcash.jpg" alt="M Cach"/>
+									<img src="Images1/genie.jpg" alt="Dialog Genie"/>
+								</li>	
+							</center>
+            </footer>
+
+</body>
+</html>
